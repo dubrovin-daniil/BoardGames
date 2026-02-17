@@ -1,0 +1,3 @@
+appconfig.json
+*.json
+/bin
