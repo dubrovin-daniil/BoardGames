@@ -38,7 +38,7 @@ namespace BoardGames
             DateTime start = new DateTime(2020, 1, 1);
             int range = (DateTime.Today - start).Days;
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++) 
             {
                 var session = new Entities.Session
                 {
