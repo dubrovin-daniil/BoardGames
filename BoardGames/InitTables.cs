@@ -50,6 +50,6 @@ namespace BoardGames
                 db.Sessions.Add(session);
             }
             db.SaveChanges();
-        }
+        } 
     }
 }
