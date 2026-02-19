@@ -33,13 +33,13 @@ namespace BoardGames
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Game>(b =>
-            {
+            { 
                 b.Property(g => g.Title).HasColumnType("NVARCHAR").HasMaxLength(100).IsRequired();
                 b.HasIndex(g => g.Title).IsUnique();
                 b.ToTable(g =>
                 {
                     g.HasCheckConstraint("CK_Game_MinPlayers", "MinPlayers > 0");
-                    g.HasCheckConstraint("CK_Game_MaxPlayers", "MaxPlayers > 0");
+                    g.HasCheckConstraint("CK_Game_MaxPlayers", "MaxPlayers > 0");   
                 });
             });
 
