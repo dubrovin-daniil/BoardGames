@@ -9,7 +9,7 @@ namespace BoardGames
         public DbSet<Game> Games { get; set; }
         public DbSet<Member> Members { get; set; }
         public DbSet<Session> Sessions { get; set; }
-
+         
         private readonly string _connectionString;
 
         public AppDbContext()
